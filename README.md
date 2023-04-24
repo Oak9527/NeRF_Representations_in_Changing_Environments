@@ -16,19 +16,19 @@ https://download.pytorch.org/whl/cu113
 
 5，install tinycudann:
                  
-                 git clone --recursive https://github.com/nvlabs/tiny-cuda-nn
+git clone --recursive https://github.com/nvlabs/tiny-cuda-nn
 
-                 cd tiny-cuda-nn
+cd tiny-cuda-nn
 
-                 cmake . -B build
+cmake . -B build
 
-                 cmake --build build --config RelWithDebInfo -j
+cmake --build build --config RelWithDebInfo -j
 
-                 pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 
-                 cd bindings/torch
+cd bindings/torch
 
-                 python setup.py install
+python setup.py install
 
 6，install apex：pip install apex
 
