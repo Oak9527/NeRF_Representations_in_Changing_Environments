@@ -1,9 +1,11 @@
-OS：ubuntu20.04.5LTS
+# NeRF Representations in Changing Environments
 
+
+## environment：
+OS：ubuntu20.04.5LTS
 
 cuda version：11.3 
 
-environment：
 
 1，conda create -n nerf-w python=3.8
 
@@ -34,7 +36,7 @@ python setup.py install
 
 7，pip install pip install -r requirements.txt
 
-# run
+## run
 
 python train.py 
    --dataset_name blender 
@@ -47,3 +49,6 @@ python train.py
    --encode_t 
    --encode_a
    --beta_min 0.1
+
+## Citations 
+The repo is heavily inspired by [Nerf_pl](https://github.com/kwea123/nerf_pl). 
