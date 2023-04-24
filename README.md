@@ -14,13 +14,22 @@ https://download.pytorch.org/whl/cu113
 
 4，install torch-scatter：pip install torch-scatter -f https://data.pyg.org/whl/torch-1.11.0+${CUDA}.html
 
-5，install tinycudann:git clone --recursive https://github.com/nvlabs/tiny-cuda-nn
+5，install tinycudann:
+                 
+                 git clone --recursive https://github.com/nvlabs/tiny-cuda-nn
+
                  cd tiny-cuda-nn
+
                  cmake . -B build
+
                  cmake --build build --config RelWithDebInfo -j
+
                  pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+
                  cd bindings/torch
+
                  python setup.py install
+
 6，install apex：pip install apex
 
 7，pip install pip install -r requirements.txt
