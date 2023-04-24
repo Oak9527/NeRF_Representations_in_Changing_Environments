@@ -9,11 +9,11 @@ cuda version：11.3
 
 1.create a conda environment:
 ```
-conda create -n nerf-w python=3.8
+conda create -n nerf_changing python=3.8
 ```
 2.activate the conda environment:
 ```
-conda activate nerf-w
+conda activate nerf_changing
 ```
 3.install torch：
 ```
