@@ -26,19 +26,8 @@ pip install torch-scatter -f https://data.pyg.org/whl/torch-1.11.0+${CUDA}.html
 ```
 5.install tinycudann:
 ```
-git clone --recursive https://github.com/nvlabs/tiny-cuda-nn
-
-cd tiny-cuda-nn
-
-cmake . -B build
-
-cmake --build build --config RelWithDebInfo -j
-
-pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
-
-cd bindings/torch
-
-python setup.py install
+pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
+pip install ninja git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 ```
 6.install apex：
 ```
