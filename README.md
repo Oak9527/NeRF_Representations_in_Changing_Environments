@@ -7,11 +7,11 @@ OS：ubuntu20.04.5LTS
 cuda version：11.3 
 
 
-1.
+1.create a conda environment:
 ```
 conda create -n nerf-w python=3.8
 ```
-2.
+2.activate the conda environment:
 ```
 conda activate nerf-w
 ```
@@ -45,7 +45,7 @@ python setup.py install
 pip install apex
 ```
 
-7.
+7.Install core requirements 
 ```
 pip install -r requirements.txt
 ```
